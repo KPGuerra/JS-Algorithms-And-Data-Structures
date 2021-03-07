@@ -1,3 +1,6 @@
+// Problem:
+// Given two strings, write a funciton to determine if the second string is an anagram of the first. 
+
 function validAnagram(string1, string2){
     let frequencyCounter1 = {};
     let frequencyCounter2 = {};
@@ -25,4 +28,7 @@ function validAnagram(string1, string2){
   console.log(validAnagram( '', ''))
   console.log(validAnagram( 'aaz', 'zza'))
   console.log(validAnagram( 'cinema', 'iceman'))
+
+  // BIG IDEA: Avoid nested loops using objects is FASTER. We want O(n). 
+
 
